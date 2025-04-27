@@ -1,8 +1,14 @@
 function  arrayEquals(a, b) { 
-    let index=0;
-    ok = a.reduce((acc,actual,index,b)=>
-        acc=actual===b[index]
-    );
+    if((typeof a!=typeof b)||((a==null)||(b==null))||(a.length!=b.length))
+        return false
+    else{
+        if( (a.length===0) && (b.length===0) )
+            return true
+        else
+            return a.reduce(function(acc,actual,index,b){
+                return acc=actual===b[index]
+            });
+    } 
  }
 
  var  a  = [1,2,3,4];
@@ -16,3 +22,4 @@ function  arrayEquals(a, b) {
  console.log(arrayEquals(e, c));
  console.log(arrayEquals(c, d));
  console.log(arrayEquals(e, e));
+ console.log(arrayEquals([],[]));
