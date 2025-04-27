@@ -1,29 +1,30 @@
 var  prices  = [1.2, 2, 22, -33, 12, 0.0, "13", Math.PI];
 var  names  = ["John", "Paul", "George", "Ringo"];
 
+
+function hayNumero(valores){
+    let ok;
+    valores.forEach(element => { 
+        if(typeof element=="number")
+            ok= true;
+    })
+        if(ok!=true)
+            ok= false;
+        return ok;
+}
 function  max(values) { 
     let max=-1;
-    if(values.length!=0){
-        values.forEach(element => {
-            if((typeof element=="number")&&(element>max))
-                max=element
-        });
-        if(max!=-1)
-            return(max)
+    if((values.length!=0)&&(hayNumero(values))){
+        return Math.max(...values)
     }   
     return ("Esta vacio o solo posee elementos no numericos")
     
 }
 function  min(values) { 
     let min=999999;
-    if(values.length!=0){
-        values.forEach(element => {
-            if((typeof element=="number")&&(element<min))
-                min=element
-        });
-        if(min!=999999)
-            return(min)
-    }   
+    if((values.length!=0)&&(hayNumero(values))){
+        return Math.min(...values)
+    };  
     return ("Esta vacio o solo posee elementos no numericos")
 }
 function  avg(values) { 
