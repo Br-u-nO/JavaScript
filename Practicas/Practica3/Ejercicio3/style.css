@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    height: 100dvh;
+    width: 100%;
+    background: radial-gradient(white 10%,rgb(99, 98, 98));
+}
+
+#titulo{
+    position: absolute;
+    top: 0;
+    font-family: "Kanit", sans-serif;
+    border: dashed rgba(193, 247, 247, 0.452) 5px;
+    border-radius: 40px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration:double;
+}
+
+#gato{
+    height: 400px;
+    width: 600px; 
+    border: solid lightskyblue 7px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.589) 1px 1px 10px 4px;
+}
+
+#parar{
+    width: 130px;
+    height: 40px;
+    margin-top:25px;
+    background-color: rgba(158, 218, 255, 0.836);
+    border: none;
+    border-radius:8px ;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#parar:hover{
+    background-color: rgba(158, 218, 255, 0.651);
+    transform: scale(1.1);
+}
