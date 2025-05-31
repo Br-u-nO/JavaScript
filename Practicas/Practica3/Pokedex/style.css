@@ -107,6 +107,7 @@ main{
 
 #mitad2{
     padding-left: 30px;
+    overflow-y: scroll;
 }
 
 .info{
