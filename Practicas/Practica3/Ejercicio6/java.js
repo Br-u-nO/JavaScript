@@ -67,8 +67,6 @@ function mostrar(nombre){
         msj.style.opacity=0;
 
         paises_div.forEach(element =>{
-            let nombre_buscado = buscarNombre(element);
-
             paises.forEach(pais =>{
                 if(element.innerText.includes(pais.nombre))
                     nombre_buscado = pais.nombre;
@@ -88,9 +86,6 @@ function mostrar(nombre){
     }
     }
 
-function buscarNombre(element){
-    
-}   
 
     btn_todos.addEventListener('click',()=>{
         const paises = document.querySelectorAll('.pais');
@@ -119,6 +114,8 @@ function buscarNombre(element){
         if(valor === ''){
             inicio();
         }else{
-
+            let clone =  paises.slice()
+            for(let i=0;i<250;i++)clone.pop(0);
+            console.log(paises)
         }
     })

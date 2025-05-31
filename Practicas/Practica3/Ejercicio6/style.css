@@ -16,9 +16,8 @@ main{
     justify-content: center;
 }
 #titulo{
-    
+    font-weight: 400;
     display: block;
-
     top:0;
     color: rgb(250, 248, 245);
 }
@@ -37,6 +36,7 @@ main{
     align-items: center;
     gap: 30px;
     width: 800px;
+    margin-bottom: 40px;
 }
 
 #nombre{
@@ -87,6 +87,10 @@ main{
     position: relative;
     
 }
+
+.pais h3,p{
+    font-weight: 500;
+}
 .nombre_pais{
     color:white;
 }
@@ -112,7 +116,8 @@ main{
     align-items: center;
     padding: 5px 20px 5px 20px;
     opacity:0;
-    top:40px;
+    transform: translatey(60px);
+    position: absolute;
 }
 
 
@@ -148,7 +153,7 @@ main{
 }
 
 #filtrar{
+    margin-left: 38rem;
     position: absolute;
-    left: 700px;
-    top: 282px;
+    top: 245px;
 }
