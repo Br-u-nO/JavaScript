@@ -5,6 +5,7 @@ body{
     justify-content: center;
     gap: 20px;
     user-select: none;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 #cont_contrasenia{

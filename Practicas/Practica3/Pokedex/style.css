@@ -4,6 +4,7 @@ body{
     height: 100vh;
     margin: 0;
     user-select: none;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 header{
@@ -29,6 +30,7 @@ main{
 #contenedor_principal{
     height: 70%;
     min-width:930px;
+    min-height: 200px;
     padding: 20px;
     border-radius: 20px;
     background-color: rgb(233, 238, 238);
@@ -42,14 +44,20 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    overflow-y:scroll ;
 }
 
 #pokemon{
     width: 250px;
     padding: 20px;
     border-radius: 40px;
-    margin-top: 90px;
+    margin-top: 60px;
+    transition: all 0.2s;
+}
+
+#pokemon:focus{
+    background-color: rgb(255, 227, 101);
+    border: solid rgb(85, 83, 214) 4px;
 }
 
 #buscar{
@@ -68,20 +76,64 @@ main{
     font-size: 400;
 }
 
+#imagen{
+    height: 250px;
+    width: 250px;
+    border: solid black 4px;
+    border-radius: 10px;
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    z-index: 0;
+}
+
+#icono_sonido{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.flecha{
+    height:40px; 
+    margin: 0;
+    font-size: 40px;
+    cursor: pointer;
+}
+
 
 #mitad2{
-    
+    padding-left: 30px;
 }
 
 .info{
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
+    
 }
 
 .info h2{
     text-align: center;
 }
+
+#tipos{
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #928e8e;
+    border-radius: 5px;
+}
+
+
 
 footer{
     background-color: rgb(196, 166, 127);
