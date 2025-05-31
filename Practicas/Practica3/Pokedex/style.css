@@ -1,0 +1,88 @@
+
+body{
+    background-color: tan;
+    height: 100vh;
+    margin: 0;
+    user-select: none;
+}
+
+header{
+    width: 100%;
+    background-color:#ef5350;
+    box-shadow: rgba(0, 0, 0, 0.685) 0 0 5px 5px;
+}
+
+#logo{
+    aspect-ratio:4/1;
+    object-fit: contain;
+    margin-left:-25px ;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84.8vh;
+}
+
+#contenedor_principal{
+    height: 680px;
+    width:930px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(233, 238, 238);
+    box-shadow: black 0 0 20px 1px;
+    display: flex;
+    justify-content: center;
+}
+
+#mitad1{
+    border-right: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+#pokemon{
+    width: 250px;
+    padding: 20px;
+    border-radius: 40px;
+    margin-top: 90px;
+}
+
+#buscar{
+    height: 45px;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: white;
+    transition: ease-in-out 0.3s;
+}
+
+#buscar:hover{
+    background-color:#ef5350;
+    color: white;
+    font-size: 400;
+}
+
+
+#mitad2{
+    
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.info h2{
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(196, 166, 127);
+    height: 60px;
+}
